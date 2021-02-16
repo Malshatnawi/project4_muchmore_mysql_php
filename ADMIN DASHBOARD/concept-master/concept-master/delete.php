@@ -27,7 +27,7 @@ if(!$connection){
 
 
 
-if($_SERVER['HTTP_REFERER']=="http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/ADMIN%20DASHBOARD/concept-master/concept-master/manage_admin.php"){
+if($_SERVER['HTTP_REFERER']=="ADMIN%20DASHBOARD/concept-master/concept-master/manage_admin.php"){
     $query="delete from admins where admin_id = {$_GET['id']};";
     mysqli_query($connection, $query);
 
@@ -39,21 +39,21 @@ header("location:manage_admin.php");
 
 
 // }
-elseif($_SERVER['HTTP_REFERER']=="http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/ADMIN%20DASHBOARD/concept-master/concept-master/manage_customers.php"){
+elseif($_SERVER['HTTP_REFERER']=="ADMIN%20DASHBOARD/concept-master/concept-master/manage_customers.php"){
     $query="delete from customers where customer_id = {$_GET['id']};";
     mysqli_query($connection, $query);
     header("location:manage_customers.php");
 }
 
 
-elseif($_SERVER['HTTP_REFERER']=="http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/ADMIN%20DASHBOARD/concept-master/concept-master/manage_categories.php"){
+elseif($_SERVER['HTTP_REFERER']=="ADMIN%20DASHBOARD/concept-master/concept-master/manage_categories.php"){
     $query="delete from categories where category_id = {$_GET['id']};";
     mysqli_query($connection, $query);
     header("location:manage_categories.php");
 }
 
 
-elseif($_SERVER['HTTP_REFERER']=="http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/ADMIN%20DASHBOARD/concept-master/concept-master/manage_products.php"){
+elseif($_SERVER['HTTP_REFERER']=="ADMIN%20DASHBOARD/concept-master/concept-master/manage_products.php"){
     $query="delete from products where product_id = {$_GET['id']};";
     mysqli_query($connection, $query);
     header("location:manage_products.php");

@@ -61,15 +61,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<form action="#" method="post" class="last">
 							<?php 
                                 // if(!isset($_SESSION['customer'])){
-                                //     echo "<button class='btn btn-primary'>  <a class='text-dark' href='http://localhost/E-Commerce Website PHP and MYSQL\CODE\ADMIN DASHBOARD\concept-master\concept-master\pages/login.php'>Login</a> 
+                                //     echo "<button class='btn btn-primary'>  <a class='text-dark' href='ADMIN DASHBOARD\concept-master\concept-master\pages/login.php'>Login</a> 
                                 //     </button>";
 
-                                //     echo "<button class='btn btn-primary ml-3'>  <a class='text-dark' href='http://localhost/E-Commerce Website PHP and MYSQL\CODE\ADMIN DASHBOARD\concept-master\concept-master\pages/registration.php'>Register</a> 
+                                //     echo "<button class='btn btn-primary ml-3'>  <a class='text-dark' href='ADMIN DASHBOARD\concept-master\concept-master\pages/registration.php'>Register</a> 
                                 //     </button>";
                                 // }
                                 // else{
-								// 	echo "<button class='btn btn-primary'><a class='text-dark' href='http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/ECOMMERCE-PUBLIC/goggles-web_Free07-08-2018_1255464790/web/profile_orders.php'><i class='fa fa-user-circle-o' aria-hidden='true' style='margin-right:10px'></i>Profile</a></button>";
-                                //     echo "<button class='btn btn-primary ml-3'><a class='text-dark' href='http://localhost/E-Commerce Website PHP and MYSQL\CODE\ADMIN DASHBOARD\concept-master\concept-master\pages/logout.php'><i class='fa fa-user-circle-o' aria-hidden='true' style='margin-right:10px'></i>Logout</a></button>";
+								// 	echo "<button class='btn btn-primary'><a class='text-dark' href='ECOMMERCE-PUBLIC/goggles-web_Free07-08-2018_1255464790/web/profile_orders.php'><i class='fa fa-user-circle-o' aria-hidden='true' style='margin-right:10px'></i>Profile</a></button>";
+                                //     echo "<button class='btn btn-primary ml-3'><a class='text-dark' href='ADMIN DASHBOARD\concept-master\concept-master\pages/logout.php'><i class='fa fa-user-circle-o' aria-hidden='true' style='margin-right:10px'></i>Logout</a></button>";
 								// }
 								
 
@@ -274,15 +274,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</li>
 						<?php 
 						 if(!isset($_SESSION['customer'])){
-							echo "<li class='nav-item'>  <a class='nav-link' href='http://localhost/E-Commerce Website PHP and MYSQL\CODE\ADMIN DASHBOARD\concept-master\concept-master\pages/login.php'>Login</a> 
+							echo "<li class='nav-item'>  <a class='nav-link' href='ADMIN DASHBOARD\concept-master\concept-master\pages/login.php'>Login</a> 
 							</li>";
 
-							echo "<li class='nav-item'>  <a class='nav-link' href='http://localhost/E-Commerce Website PHP and MYSQL\CODE\ADMIN DASHBOARD\concept-master\concept-master\pages/registration.php'>Register</a> 
+							echo "<li class='nav-item'>  <a class='nav-link' href='ADMIN DASHBOARD\concept-master\concept-master\pages/registration.php'>Register</a> 
 							</li>";
 						}
 						else{
-							echo "<li class='nav-item'><a class='nav-link' href='http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/profile_orders.php'><i class='fa fa-user-circle-o' aria-hidden='true' style='margin-right:10px'></i>Orders</a></li>";
-							echo "<li class='nav-item'><a class='nav-link' href='http://localhost/E-Commerce Website PHP and MYSQL\CODE\ADMIN DASHBOARD\concept-master\concept-master\pages/logout.php'><i class='fa fa-user-circle-o' aria-hidden='true' style='margin-right:10px'></i>Logout</a></li>";
+							echo "<li class='nav-item'><a class='nav-link' href='profile_orders.php'><i class='fa fa-user-circle-o' aria-hidden='true' style='margin-right:10px'></i>Orders</a></li>";
+							echo "<li class='nav-item'><a class='nav-link' href='ADMIN DASHBOARD\concept-master\concept-master\pages/logout.php'><i class='fa fa-user-circle-o' aria-hidden='true' style='margin-right:10px'></i>Logout</a></li>";
 						}
 ?>
 					</ul>
@@ -316,7 +316,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							$result = mysqli_query($connection,$query);
 							$row = mysqli_fetch_assoc($result); ?>
 
-							<a style="color:black;font-size:1.75em"  href="http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/ECOMMERCE-PUBLIC/goggles-web_Free07-08-2018_1255464790/web/products.php?id=<?php echo $row['category_id']?>"><?php echo $row['category_name'];?></a>
+							<a style="color:black;font-size:1.75em"  href="ECOMMERCE-PUBLIC/goggles-web_Free07-08-2018_1255464790/web/products.php?id=<?php echo $row['category_id']?>"><?php echo $row['category_name'];?></a>
 							<i style="color:black;font-size:1.75em">|</i>
 						</li>
 						<?php

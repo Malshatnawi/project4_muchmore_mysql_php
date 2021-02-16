@@ -23,12 +23,12 @@ if(isset($_POST['submit'])){
                 if($password==$row['admin_password']){
                     if($row['admin_role']=="admin"){
                         $_SESSION['admin']=$row['admin_id'];
-                        header("location:http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/ADMIN%20DASHBOARD/concept-master/concept-master/manage_customers.php");
+                        header("location:ADMIN%20DASHBOARD/concept-master/concept-master/manage_customers.php");
                     }
                     else{
                         $_SESSION['admin']=$row['admin_id'];
                         $_SESSION['super_admin']=$row['admin_id'];
-                        header("location:http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/ADMIN%20DASHBOARD/concept-master/concept-master/manage_admin.php");
+                        header("location:ADMIN%20DASHBOARD/concept-master/concept-master/manage_admin.php");
                     }
 
         }
@@ -47,7 +47,7 @@ if(isset($_POST['submit'])){
             if(mysqli_num_rows($result) != 0){
                 if($password==$row['customer_password']){
                     $_SESSION['customer']=$row['customer_id'];
-                    header("location:http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/index.php");
+                    header("location:index.php");
 
                 }   
             }

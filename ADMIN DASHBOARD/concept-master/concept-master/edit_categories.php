@@ -6,7 +6,7 @@ if(isset($_SESSION['admin'])){
 
 }
 else{
-    header("location: http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/ADMIN%20DASHBOARD/concept-master/concept-master/pages/login.php ");
+    header("location: ADMIN%20DASHBOARD/concept-master/concept-master/pages/login.php ");
     die();
 }
 
@@ -129,7 +129,7 @@ if (isset($_POST['category_submit'])) {
 							 $item=$_POST['item'];
 
 							$_SESSION['item']=$_POST['item'];
-                            header("location:http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/ECOMMERCE-PUBLIC/goggles-web_Free07-08-2018_1255464790/web/searchresults.php");
+                            header("location:ECOMMERCE-PUBLIC/goggles-web_Free07-08-2018_1255464790/web/searchresults.php");
                         }
 				
 					
@@ -153,8 +153,8 @@ if (isset($_POST['category_submit'])) {
                                     <h5 class="mb-0 text-white nav-user-name"><?php echo $row['admin_name']; ?></h5>
                                     <span class="status"></span><span class="ml-2">Available</span>
                                 </div>
-                                <a class="dropdown-item" href="http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/index.php"><i class="fas fa-user mr-2"></i>Homepage</a>
-                                <a class="dropdown-item" href="http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/ADMIN%20DASHBOARD/concept-master/concept-master/pages/logout.php"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                                <a class="dropdown-item" href="index.php"><i class="fas fa-user mr-2"></i>Homepage</a>
+                                <a class="dropdown-item" href="ADMIN%20DASHBOARD/concept-master/concept-master/pages/logout.php"><i class="fas fa-power-off mr-2"></i>Logout</a>
                             </div>
                         </li>
 
@@ -368,7 +368,7 @@ $row=mysqli_fetch_assoc($result);
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="text-md-right footer-links d-none d-sm-block">
                                
-                                <a href="http://localhost/E-Commerce%20Website%20PHP%20and%20MYSQL/CODE/ECOMMERCE-PUBLIC/goggles-web_Free07-08-2018_1255464790/web/contact.php">Contact Us</a>
+                                <a href="ECOMMERCE-PUBLIC/goggles-web_Free07-08-2018_1255464790/web/contact.php">Contact Us</a>
                             </div>
                         </div>
                     </div>
